@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Checkout — USB Electronic Lighter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="container checkout-page">
+    <h1>Checkout</h1>
+    <p>Complete your order — choose the payment method and place order.</p>
+
+    <form id="checkoutForm" class="checkout-form">
+      <label><input name="name" placeholder="Full name" required></label>
+      <label><input name="phone" placeholder="Phone" required></label>
+      <label><input name="email" type="email" placeholder="Email" required></label>
+      <label><input name="address" placeholder="Address" required></label>
+
+      <div class="payment-methods">
+        <label><input type="radio" name="payment" value="card" checked> Card</label>
+        <label><input type="radio" name="payment" value="omt"> OMT</label>
+        <label><input type="radio" name="payment" value="cod"> Cash on Delivery</label>
+      </div>
+
+      <button type="submit" class="btn-primary">Place order</button>
+    </form>
+  </main>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
